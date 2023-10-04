@@ -4,37 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inicio</title>
-    
+
     <!-- Bootstrap CDN para estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Estilos personalizados -->
     <style>
         body {
-            background-color: #fff;
+            background-color: #000;
+            color: #fff;
         }
         .navbar {
-            background-color: #58B2AF;
+            background-color: #60B2AF;
         }
         .jumbotron {
             background-image: url("https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg");
             background-size: cover;
             background-attachment: fixed;
             background-opacity: 0.6;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 100px 0;
+            margin-bottom: 20px;
+        }
+        .jumbotron h1 {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: inline;
+            padding: 10px;
         }
         .content {
-            background-color: #fff;
+            background-color: #000;
             padding: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
 
 <!-- Menú de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="index.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,19 +75,20 @@
 
 <!-- Jumbotron -->
 <div class="jumbotron">
-    <h1>Bienvenido a Nuestra Página Web</h1>
-    <p>Explora nuestro proyecto y descubre más sobre nosotros.</p>
+    <h1>¡Bienvenido a Nuestro Proyecto!</h1>
 </div>
 
 <!-- Contenido principal -->
 <div class="container content">
-    <h2>Conoce Nuestro Proyecto</h2>
-    <p>Miguel is a scombag.</p>
+    <h2>Descubre más sobre nosotros</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, quam sit amet efficitur bibendum, odio libero facilisis odio, sit amet fermentum metus felis a augue.</p>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</p>
     <p>Proin a tincidunt dolor. Nullam tincidunt congue mi, ac interdum leo scelerisque a. Sed ut libero at tellus dignissim vestibulum.</p>
     
     <!-- Video de YouTube -->
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3NOwvKN-qi4" frameborder="0" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NOwvKN-qi4" frameborder="0" allowfullscreen></iframe>
+    </div>
 </div>
 
 <!-- Bootstrap CDN para scripts -->
