@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inicio</title>
-
+    
     <!-- Bootstrap CDN para estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -15,10 +15,17 @@
             color: #fff;
         }
         .navbar {
-            background-color: #60B2AF;
+            background-color: transparent;
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .navbar-nav a {
+            color: #60B2AF;
+            margin-right: 20px;
         }
         .jumbotron {
-            background-image: url("https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg");
+            background-image: url("https://www.telegraph.co.uk/content/dam/football/2023/09/15/TELEMMGLPICT000347677646_16947731509210_trans_NvBQzQNjv4BqRo0U4xU-30oDveS4pXV-Vv4Xpit_DMGvdp2n7FDd82k.jpeg?imwidth=960");
             background-size: cover;
             background-attachment: fixed;
             background-opacity: 0.6;
@@ -56,20 +63,17 @@
 <!-- Menú de navegación -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="equipo.html">Equipo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="noticias.html">Noticias</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="noticias.html">Noticias</a>
+            </li>
+        </ul>
     </div>
 </nav>
 
